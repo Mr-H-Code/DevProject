@@ -1,0 +1,157 @@
+/* Reset for å fjerne default marginer/padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fargepalett */
+:root {
+    --primary-blue: #1E3A8A;      /* Dyp blå til hovedfarge */
+    --secondary-blue: #3B82F6;    /* Lysere blå for aksenter */
+    --light-blue: #DBEAFE;        /* Lys bakgrunnsblå */
+    --dark-gray: #1F2937;         /* Mørk grå for tekst */
+    --light-gray: #F3F4F6;        /* Lys grå for bakgrunn */
+    --white: #FFFFFF;             /* Hvit for kontrast */
+}
+
+/* Generelle stiler */
+body {
+    font-family: Arial, sans-serif;
+    color: var(--dark-gray);
+    background-color: var(--light-gray);
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--primary-blue);
+    color: var(--white);
+    padding: 1rem 2rem; /* Legg til sidestramming */
+    display: flex; /* Aktiver flexbox */
+    justify-content: space-between; /* Plasserer innholdet på hver sin side */
+    align-items: center; /* Vertikal justering */
+}
+
+.logo {
+    width: 50%; /* Juster dette til ønsket størrelse */
+    max-width: 150px; /* Sett en maksimal bredde for logoen */
+    height: auto; /* Behold proporsjonene */
+    /* Reduce or remove margin-left to move logo left */
+    margin-left: 0; /* Flytter logoen til venstre */
+    margin-right: 20px; /* Optional: add some space to the right */
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Navigation styles */
+nav {
+    margin-top: 1rem; /* Add space between the header and the navigation */
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+nav ul li a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: var(--secondary-blue);
+}
+
+/* Hovedinnhold */
+main {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: var(--white);
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+details {
+    margin-bottom: 1rem; /* Add some space between sections */
+}
+
+summary {
+    cursor: pointer; /* Change cursor to pointer for better UX */
+    padding: 0.5rem; /* Add some padding */
+    background-color: var(--secondary-blue); /* Background color */
+    color: var(--white); /* Text color */
+    border: none; /* Remove default border */
+    text-align: left; /* Align text to the left */
+    width: 100%; /* Full width for the button */
+    font-size: 1.2rem; /* Font size */
+}
+
+summary:hover {
+    background-color: var(--primary-blue); /* Change color on hover */
+}
+
+.content {
+    padding: 0.5rem 1rem; /* Add some padding */
+    border: 1px solid var(--light-blue); /* Optional: Add a border */
+    border-radius: 5px; /* Optional: Rounded corners */
+    margin-top: 0.5rem; /* Space above content */
+    display: block; /* Ensures content is displayed */
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-blue);
+    color: var(--white);
+    padding: 2rem 0;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+footer h2 {
+    margin-bottom: 1rem;
+}
+
+footer p {
+    margin-bottom: 0.5rem;
+}
+
+footer .social-media {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+footer .social-media a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer .social-media a:hover {
+    color: var(--secondary-blue);
+}
+
+/* Responsiv design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    main {
+        padding: 1rem;
+        margin: 1rem;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+}
