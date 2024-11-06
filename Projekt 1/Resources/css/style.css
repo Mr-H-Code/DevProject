@@ -6,6 +6,30 @@ h3{
   font-weight:normal;  
 }
 
+.margin{
+  display: flex;
+  flex-direction: row;
+}
+
+.menu{
+  width: 200px;
+  background-color: navy;
+  padding: 20px;
+  color: white;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.clickable:hover{
+  background-color: crimson;
+}
+
+.content {
+  flex: 1;           
+  padding: 20px;
+  box-sizing: border-box;
+}
+
 table {
     border-spacing: 1px;
     border: 1px solid black;
