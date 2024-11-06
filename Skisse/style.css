@@ -32,7 +32,7 @@ header {
     align-items: center; /* Vertikal justering */
 }
 
-.BING-logo {
+.logo {
     width: 50%; /* Juster dette til ønsket størrelse */
     max-width: 150px; /* Sett en maksimal bredde for logoen */
     height: auto; /* Behold proporsjonene */
