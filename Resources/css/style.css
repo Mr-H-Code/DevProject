@@ -98,6 +98,23 @@ summary:hover {
     background-color: var(--primary-blue); /* Change color on hover */
 }
 
+.faginformasjon {
+    font-weight: bold;
+    font-size: medium;
+    color: #1E3A8A;
+    cursor: pointer;
+    margin-bottom: 5px;
+    background-color: transparent;
+}
+
+.semester-kort {
+    margin-bottom: 20px;
+}
+
+.faginformasjon:hover {
+    background-color: transparent;
+}
+
 .content {
     padding: 0.5rem 1rem; /* Add some padding */
     border: 1px solid var(--light-blue); /* Optional: Add a border */
