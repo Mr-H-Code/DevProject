@@ -132,6 +132,8 @@ footer .social-media {
 table {
     border-spacing: 1px;
     border: 1px solid black;
+    width: 100%;
+    border-collapse: collapse;
   }
 
   th {
