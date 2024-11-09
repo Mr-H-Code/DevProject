@@ -30,6 +30,7 @@ header {
     display: flex; /* Aktiver flexbox */
     justify-content: space-between; /* Plasserer innholdet på hver sin side */
     align-items: center; /* Vertikal justering */
+    flex-wrap: wrap;
 }
 
 .logo {
@@ -153,13 +154,13 @@ th, td {
 
   }
 
-footer .social-media a {
-    color: var(--white);
+footer a {
+    color: white;
     text-decoration: none;
     font-weight: bold;
 }
 
-footer .social-media a:hover {
+footer a:hover {
     color: var(--secondary-blue);
 }
 
