@@ -82,6 +82,21 @@ p, ul {
     margin-bottom: 1rem;
 }
 
+.image-container {
+    display: flex; /* Use flexbox to center images */
+    justify-content: center; /* Center images horizontally */
+    align-items: center; /* Center images vertically */
+    flex-direction: column; /* Stack images vertically */
+    text-align: center; /* Align text below images */
+    margin-top: 20px; /* Add some space at the top */
+}
+
+.screenshot {
+    max-width: 80%; /* Adjust size of the images */
+    height: auto;   /* Maintain aspect ratio */
+    margin-bottom: 20px; /* Space between the images */
+}
+
 
 /* Responsiv design */
 @media (max-width: 768px) {

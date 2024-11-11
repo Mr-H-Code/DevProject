@@ -33,17 +33,11 @@
         <section id="automated-testing">
             <h2>Automated Accessibility Testing</h2>
             <p>
-                We conducted automated testing using tools like [Testing Tool Name, e.g., WAVE, Axe] to identify and address common accessibility issues. This helped us verify areas such as:
+                Our website has been tested using Google's Lighthouse tool to ensure accessibility. The tool returned favorable results with 15 audits passing successfully. For example, the website ensures that all image elements contain appropriate alt attributes, and it does not use the [user-scalable="no"] attribute, which can hinder zooming on mobile devices. The contrast between background and foreground colors is sufficient, ensuring readability for users with visual impairments. Additionally, the website includes essential HTML elements such as a title tag and a valid lang attribute for the html element. These elements improve the website's accessibility by providing context to screen readers and other assistive technologies.
             </p>
-            <ul>
-                <li>**Contrast Ratios:** Text and backgrounds meet the required contrast ratios for readability.</li>
-                <li>**Image Alt Text:** Alternative text is applied to images to make them screen reader-compatible.</li>
-                <li>**Keyboard Navigation:** All interactive elements are accessible via keyboard alone.</li>
-                <li>**Semantic HTML Structure:** Key page sections are marked up semantically for ease of navigation.</li>
-            </ul>
-            <p>
-                Automated tests are a great starting point, but they don't cover everything. Below, we discuss further coding choices made to enhance accessibility.
-            </p>
+            <p>Further, the website also complies with other key accessibility standards. The list items are properly contained within ul, ol, or menu elements, and touch targets are appropriately sized for mobile devices. The use of heading elements follows a logical order, ensuring a clear document structure that can be navigated easily by screen readers. Tables are structured with proper headers and captions, which are essential for users navigating the page with assistive technologies.</p>
+
+            <p>While the Lighthouse tool caught several accessibility issues, it cannot detect everything. There are areas that still need manual testing, which leads us to the next section.</p>
         </section>
 
         <section id="manual-checks">
@@ -52,10 +46,9 @@
                 Beyond automated testing, we implemented several key design practices to make the site more accessible. These include:
             </p>
             <ul>
-                <li><strong>Semantic HTML Structure:</strong> We used semantic tags like <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, and <code>&lt;main&gt;</code> to provide screen readers with a clear document structure.</li>
-                <li><strong>Accessible Forms:</strong> Input fields have associated <code>&lt;label&gt;</code> tags, allowing screen readers to correctly identify each field.</li>
-                <li><strong>Keyboard-Friendly Navigation:</strong> Clear focus styles on interactive elements ensure keyboard-only users can follow their position on the page.</li>
-                <li><strong>Responsive Design:</strong> The layout is flexible, ensuring readability and navigation ease on devices of all sizes.</li>
+                <li>Semantic HTML Structure: We used semantic tags like <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, and <code>&lt;main&gt;</code> to provide screen readers with a clear document structure.</li>
+                <li>Keyboard-Friendly Navigation: Clear focus styles on interactive elements ensure keyboard-only users can follow their position on the page.</li>
+                <li>Responsive Design: The layout is flexible, ensuring readability and navigation ease on devices of all sizes.</li>
             </ul>
         </section>
 
@@ -65,18 +58,24 @@
                 Below are examples of automated test results and code snippets that show our attention to accessible design practices:
             </p>
             <ul>
-                <li>Screenshot 1: Test results from [Testing Tool Name] showing contrast and structure validation.</li>
-                <li>Screenshot 2: Code sample demonstrating form labels and focus styles for accessibility.</li>
+                <li>Screenshot 1: Test results from Google Lighthouse showing the result.</li>
+                <li>Screenshot 2: Passed audits.</li>
+                <li>Screenshot 3: Table with proper headers and the use of "summary" and "details" elements are used for collapsible content. This is a great choice for making the page interactive while keeping it accessible.</li>
             </ul>
-            <!-- Placeholder for images -->
-            <img src="screenshot1.png" alt="Screenshot of automated test results">
-            <img src="screenshot2.png" alt="Code sample with accessible labels">
+            
+          
+            <div class="image-container">
+                <img src="/Resources/Index test.png" alt="Screenshot of automated test results" class="screenshot">
+                <img src="/Resources/Index test2.png" alt="Passed audits" class="screenshot">
+                <img src="/Resources/Index code.png" alt="Passed audits" class="screenshot">
+            </div>
+            
         </section>
 
         <section id="final-notes">
             <h2>Final Notes on Accessibility</h2>
             <p>
-                We are continuously working to improve our website’s accessibility. Regular checks, both automated and manual, are part of our commitment to inclusive design. If you encounter any accessibility issues, please feel free to <a href="contact.html">contact us</a> for support.
+                We are continuously working to improve our website’s accessibility. Regular checks, both automated and manual, are part of our commitment to inclusive design. 
             </p>
         </section>
     </main>

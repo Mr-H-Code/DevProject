@@ -86,8 +86,8 @@ details {
 summary {
     cursor: pointer; /* Change cursor to pointer for better UX */
     padding: 0.5rem; /* Add some padding */
-    background-color: var(--secondary-blue); /* Background color */
-    color: var(--white); /* Text color */
+    background-color: #1e3a8a;  /* Dark blue background */
+    color: #ffffff;             /* White text */
     border: none; /* Remove default border */
     text-align: left; /* Align text to the left */
     width: 100%; /* Full width for the button */
@@ -95,7 +95,7 @@ summary {
 }
 
 summary:hover {
-    background-color: var(--primary-blue); /* Change color on hover */
+    background-color: #3b82f6;  /* Light blue background on hover */
 }
 
 .faginformasjon {
