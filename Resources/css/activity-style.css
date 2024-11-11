@@ -102,6 +102,15 @@ figcaption {
     margin-top: 10px;
 }
 
+a {
+    color: #3498db;
+    text-decoration: underline;
+  }
+  
+  a:hover {
+    color: #2980b9; 
+  }
+
 section {
     margin-bottom: 40px;
     padding-bottom: 20px;
