@@ -1,11 +1,11 @@
-/* Reset for å fjerne default marginer/padding */
+/* Reset to remove default margines/padding */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Fargepalett */
+/* color palette */
 :root {
     --primary-blue: #1E3A8A;      /* Dyp blå til hovedfarge */
     --secondary-blue: #3B82F6;    /* Lysere blå for aksenter */
@@ -15,7 +15,7 @@
     --white: #FFFFFF;             /* Hvit for kontrast */
 }
 
-/* Generelle stiler */
+/* General styles */
 body {
     font-family: Arial, sans-serif;
     color: var(--dark-gray);
@@ -56,7 +56,7 @@ nav ul li a:hover {
     color: var(--secondary-blue);
 }
 
-/* Hovedinnhold */
+/* Main */
 main {
     max-width: 1000px; /* Wider page layout */
     margin: 2rem auto;
@@ -98,7 +98,7 @@ p, ul {
 }
 
 
-/* Responsiv design */
+/* Responsive design */
 @media (max-width: 768px) {
     nav ul {
         flex-direction: column;
