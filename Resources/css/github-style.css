@@ -7,12 +7,12 @@
 
 /* color palette */
 :root {
-    --primary-blue: #1E3A8A;      /* Dyp blå til hovedfarge */
-    --secondary-blue: #3B82F6;    /* Lysere blå for aksenter */
-    --light-blue: #DBEAFE;        /* Lys bakgrunnsblå */
-    --dark-gray: #1F2937;         /* Mørk grå for tekst */
-    --light-gray: #F3F4F6;        /* Lys grå for bakgrunn */
-    --white: #FFFFFF;             /* Hvit for kontrast */
+    --primary-blue: #1E3A8A;      /* Deep blue - main color for header and footer */
+    --secondary-blue: #3B82F6;    /* Light blue - hover or accent color */
+    --light-blue: #DBEAFE;        /* Very light blue for backgrounds and borders */
+    --dark-gray: #1F2937;         /* Dark gray for text */
+    --light-gray: #F3F4F6;        /* Light gray for the page background */
+    --white: #FFFFFF;             /* White - contrast color */
 }
 
 /* General styles */
