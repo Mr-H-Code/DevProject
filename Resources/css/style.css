@@ -1,50 +1,51 @@
-/* Reset for å fjerne default marginer/padding */
+/* Reset to remove default margines/paddings */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Fargepalett */
+/* Color Palette */
+/* --------------------- */
+/* Custom colors defined as variables for reuse throughout the CSS */
 :root {
-    --primary-blue: #1E3A8A;      /* Dyp blå til hovedfarge */
-    --secondary-blue: #3B82F6;    /* Lysere blå for aksenter */
-    --light-blue: #DBEAFE;        /* Lys bakgrunnsblå */
-    --dark-gray: #1F2937;         /* Mørk grå for tekst */
-    --light-gray: #F3F4F6;        /* Lys grå for bakgrunn */
-    --white: #FFFFFF;             /* Hvit for kontrast */
+    --primary-blue: #1E3A8A;      /* Deep blue - main color for header and footer */
+    --secondary-blue: #3B82F6;    /* Light blue - hover or accent color */
+    --light-blue: #DBEAFE;        /* Very light blue for backgrounds and borders */
+    --dark-gray: #1F2937;         /* Dark gray for text */
+    --light-gray: #F3F4F6;        /* Light gray for the page background */
+    --white: #FFFFFF;             /* White - contrast color */
 }
 
-/* Generelle stiler */
+/* General Styles */
 body {
-    font-family: Arial, sans-serif;
-    color: var(--dark-gray);
-    background-color: var(--light-gray);
-    line-height: 1.6;
+    font-family: Arial, sans-serif; /* Use a clean sans-serif font */
+    color: var(--dark-gray);       /* Text color */
+    background-color: var(--light-gray); /* Background for the entire page */
+    line-height: 1.6;              /* Improve readability with proper line height */
 }
 
 header {
-    background-color: var(--primary-blue);
-    color: var(--white);
-    padding: 1rem 2rem; /* Legg til sidestramming */
-    display: flex; /* Aktiver flexbox */
-    justify-content: space-between; /* Plasserer innholdet på hver sin side */
-    align-items: center; /* Vertikal justering */
-    flex-wrap: wrap;
+    background-color: var(--primary-blue); /* Header background color */
+    color: var(--white);                  /* Header text color */
+    padding: 1rem 2rem;                   /* Add padding around the header */
+    display: flex;                        /* Flexbox for layout */
+    justify-content: space-between;       /* Space between the title and logo */
+    align-items: center;                  /* Vertically align items */
+    flex-wrap: wrap;                      /* Allow wrapping for small screens */
 }
 
 .logo {
-    width: 50%; /* Juster dette til ønsket størrelse */
-    max-width: 150px; /* Sett en maksimal bredde for logoen */
-    height: auto; /* Behold proporsjonene */
-    /* Reduce or remove margin-left to move logo left */
-    margin-left: 0; /* Flytter logoen til venstre */
-    margin-right: 20px; /* Optional: add some space to the right */
+    width: 50%;          /* Make the logo responsive */
+    max-width: 150px;    /* Limit the maximum size */
+    height: auto;        /* Maintain aspect ratio */
+    margin-left: 0;      /* Align logo to the left */
+    margin-right: 20px;  /* Add space to the right of the logo */
 }
 
 header h1 {
-    font-size: 2rem;
-    margin-bottom: 0.5rem;
+    font-size: 2rem;    /* Size of the main title */
+    margin-bottom: 0.5rem;  /* Add spacing below the title */
 }
 
 /* Navigation styles */
@@ -53,30 +54,30 @@ nav {
 }
 
 nav ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-    gap: 1.5rem;
+    list-style-type: none;   /* Remove bullet points */
+    display: flex;   /* Flexbox for horizontal navigation */
+    justify-content: center;    /* Center navigation items */
+    gap: 1.5rem;     /* Space between navigation links */
 }
 
 nav ul li a {
-    color: var(--white);
-    text-decoration: none;
-    font-weight: bold;
+    color: var(--white);    /* Link text color */
+    text-decoration: none;   /* Remove underline from links */
+    font-weight: bold;  /* Bold links */
 }
 
 nav ul li a:hover {
-    color: var(--secondary-blue);
+    color: var(--secondary-blue);   /* Change color on hover */
 }
 
-/* Hovedinnhold */
+/* Main content */
 main {
-    max-width: 800px;
-    margin: 2rem auto;
-    padding: 1rem;
-    background-color: var(--white);
-    border-radius: 8px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 800px;        /* Limit the width of the main content */
+    margin: 2rem auto;       /* Center main content and add vertical spacing */
+    padding: 1rem;           /* Add padding inside the content */
+    background-color: var(--white); /* White background for contrast */
+    border-radius: 8px;      /* Round corners */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
 details {
@@ -125,11 +126,11 @@ summary:hover {
 
 /* Footer */
 footer {
-    background-color: var(--primary-blue);
-    color: var(--white);
-    padding: 2rem 0;
-    text-align: center;
-    font-size: 0.9rem;
+    background-color: var(--primary-blue); /* Footer background color */
+    color: var(--white);                   /* Footer text color */
+    padding: 2rem 0;                       /* Add vertical padding */
+    text-align: center;                    /* Center the text */
+    font-size: 0.9rem;                     /* Slightly smaller text size */
 }
 
 footer h2 {
@@ -141,18 +142,19 @@ footer p {
 }
 
 footer .social-media {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    margin-top: 1rem;
+    display: flex;            /* Flexbox for social media links */
+    justify-content: center;  /* Center the links */
+    gap: 1rem;                /* Add spacing between links */
+    margin-top: 1rem;         /* Add spacing above social media links */
 }
 
+/* Table Styles */
 table {
-    border-spacing: 1px;
-    border: 1px solid black;
-    width: 100%;
-    border-collapse: collapse;
-  }
+    border-spacing: 1px; /* Add space between table cells */
+    border: 1px solid black; /* Black border for the table */
+    width: 100%;           /* Full width table */
+    border-collapse: collapse; /* Merge borders for a cleaner look */
+}
 
   th {
     background-color: #D6EEEE;
@@ -184,16 +186,16 @@ footer a:hover {
 /* Responsiv design */
 @media (max-width: 768px) {
     nav ul {
-        flex-direction: column;
-        gap: 0.5rem;
+        flex-direction: column; /* Stack navigation links vertically */
+        gap: 0.5rem;            /* Reduce gap between links */
     }
 
     main {
-        padding: 1rem;
-        margin: 1rem;
+        padding: 1rem;          /* Reduce padding for smaller screens */
+        margin: 1rem;           /* Reduce margin for smaller screens */
     }
 
     header h1 {
-        font-size: 1.5rem;
+        font-size: 1.5rem;      /* Reduce font size for smaller screens */
     }
 }
