@@ -25,7 +25,7 @@ body {
     line-height: 1.6;              /* Improve readability with proper line height */
 }
 
-header {
+header, .header-content {
     background-color: var(--primary-blue); /* Header background color */
     color: var(--white);                  /* Header text color */
     padding: 1rem 2rem;                   /* Add padding around the header */
@@ -36,8 +36,8 @@ header {
 }
 
 .logo {
-    width: 50%;          /* Make the logo responsive */
-    max-width: 150px;    /* Limit the maximum size */
+    width: auto;          /* Make the logo responsive */
+    max-width: 130px;    /* Limit the maximum size */
     height: auto;        /* Maintain aspect ratio */
     margin-left: 0;      /* Align logo to the left */
     margin-right: 20px;  /* Add space to the right of the logo */
@@ -183,6 +183,56 @@ footer a:hover {
     color: var(--secondary-blue);
 }
 
+.github-h1 {
+    font-size: 2.2em;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+section h2 {
+    color: var(--primary-blue);
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid var(--secondary-blue);
+    padding-bottom: 0.5rem;
+}
+
+.accessibility-list {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.problems-list {
+    list-style-type: disc;
+    margin-left: 20px;
+    padding: 5px;
+    color: var(--dark-gray);
+}
+
+.problems-list li {
+    font-weight: bold;
+}
+
+.image-container {
+    display: flex; /* Use flexbox to center images */
+    justify-content: center; /* Center images horizontally */
+    align-items: center; /* Center images vertically */
+    flex-direction: column; /* Stack images vertically */
+    text-align: center; /* Align text below images */
+    margin-top: 20px; /* Add some space at the top */
+}
+
+.screenshot {
+    max-width: 80%; /* Adjust size of the images */
+    height: auto;   /* Maintain aspect ratio */
+    margin-bottom: 20px; /* Space between the images */
+}
+
+
 /* Responsiv design */
 @media (max-width: 768px) {
     nav ul {
@@ -197,5 +247,8 @@ footer a:hover {
 
     header h1 {
         font-size: 1.5rem;      /* Reduce font size for smaller screens */
+    }
+    .header-content h1 {
+        font-size: 1.8rem;
     }
 }
