@@ -6,7 +6,6 @@
 }
 
 /* Color Palette */
-/* --------------------- */
 /* Custom colors defined as variables for reuse throughout the CSS */
 :root {
     --primary-blue: #1E3A8A;      /* Deep blue - main color for header and footer */
