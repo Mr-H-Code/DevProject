@@ -183,6 +183,8 @@ footer a:hover {
     color: var(--secondary-blue);
 }
 
+
+/* Noe spesifik styling for accessibility og github siden. */
 .github-h1 {
     font-size: 2.2em;
     text-align: center;
